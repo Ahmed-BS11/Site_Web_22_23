@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ABS website</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    <!--link for jquery to adjust the toggle button-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+
+
+</head>
+
+<body class="bodd">
+    <header id="mainHeader">
+        <!--Ici ajouter votre logo-->
+        <a href="index.html"><img src="images/logo.png" width="90px" height="90px"></a>
+        <!--H1 pour le nom de votre site-->
+        <h1 class="name"><a href="index.html">
+                ABS website
+            </a>
+        </h1>
+        <nav id="mainNav">
+            <ul>
+                <!--Mettez le nom de votre site dans les points ci dessous-->
+                <li><a href="index.html" title="Vers la page d'accueil du site .................">Accueil</a></li>
+                <li><a href="galleries.html" title="Vers les galeries livres de ce site">Galeries livres</a></li>
+                <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                <li><a href="about.html" title="En savoir plus sur ce site et sur son propriétaire">À propos</a></li>
+                <!--ici vous pouvez ajouter d'autre activité-->
+
+            </ul>
+        </nav>
+        <button class="menuToggle">
+            <img src="images/Book.png" alt="Ouvrir / Fermer le menu" width="20" height="20" />
+        </button>
+    </header>
+    <!--Ici se termine le #mainHeader-->
+    <section id="pageContent">
+        <main class="about">
+            <div class="imagee">
+                <img src="images/html_css.png" alt="html et css" width="500px" height="300px">
+                <h1>What's the difference between HTML and CSS</h1>
+                <p> HTML and CSS are a way by which you can create awesome-looking websites on your own. Both HTML and
+                    CSS go hand-in-hand in building or developing a web page of any website, but both of them serve a
+                    very different and unique purposes.</p>
+            </div>
+
+            <div class="contenu">
+
+                <table>
+                    <h3>HTML vs CSS</h3>
+                    <tr>
+                        <td><strong>HTML</strong></td>
+                        <td><strong>CSS</strong></td>
+                    </tr>
+                    <tr>
+                        <td>HTML is Hypertext Markup Language.</td>
+                        <td>CSS is Cascading Style Sheet language.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML is used to structure the content on the web page.</td>
+                        <td>CSS is used to add style to the content of a web page.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML provides display information of various tags to the browser.</td>
+                        <td>CSS enhances that information by providing styling to those same HTML tags.&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>HTML is just like the skeleton of the human body.</td>
+                        <td>CSS is like providing looks and appearance to that body</td>
+                    </tr>
+                    <tr>
+                        <td>Using HTML, you can insert video, images, and hyperlinks.</td>
+                        <td>CSS places those images, videos, etc to appropriate positions with required indentation,
+                            padding, and another styling like border color, so that it looks awesome.</td>
+                    </tr>
+                    <tr>
+                        <td>We can use CSS inside as well as outside of HTML using style and link tag respectively.</td>
+                        <td>But, CSS is useless without HTML.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML tags have limited attributes inside them.</td>
+                        <td>But, using CSS we can enhance any tag by adding more properties/attributes.</td>
+                    </tr>
+                    <tr>
+                        <td>Animation and transitions are not possible in HTML</td>
+                        <td>CSS facilitates animation and transition, which can be added to tags to improve UI.</td>
+                    </tr>
+                    <tr>
+                        <td>HTML may or may not be responsive to all devices</td>
+                        <td>But using CSS, we can make responsive web applications.&nbsp;</td>
+                    </tr>
+
+                </table>
+            </div>
+        </main>
+    </section>
+    <!--Ici se termine le #pageContent-->
+    <footer id="mainFooter">
+        <nav id="nav_foot">
+            <ul>
+                <!--Mettez le nom de votre site dans les points ci dessous-->
+                <li><a href="index.html" title="Vers la page d'accueil du site ABS website">Accueil</a></li>
+                <li><a href="galleries.html" title="Vers les galeries livres de ce site">Galeries livres</a></li>
+                <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                <li><a href="about.html" title="En savoir plus sur ce site et sur son propriétaire">À propos</a></li>
+                <!--ici vous pouvez ajouter d'autre activité-->
+
+            </ul>
+        </nav>
+        <p>&copy; All rights reserved for <a class="linkedin"
+                href="https://www.linkedin.com/in/ahmed-ben-salem-734735228/" target="_blank">Ahmed Ben Salem</a></p>
+    </footer>
+    <!--Ici se termine le #mainFooter-->
+    <script type="text/javascript">
+        $(".menuToggle").click(function () {
+            $("#mainNav").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

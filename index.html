@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ABS website</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--link for jquery to adjust the toggle button-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    <style>
+        #mainFooter {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: transparent;
+            color: grey;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="bbbb">
+    <header id="mainHeader">
+        <!--Ici ajouter votre logo-->
+        <a href="index.html"><img src="images\logo.png" width="90px" height="90px"></a>
+        <!--H1 pour le nom de votre site-->
+        <h1 class="name"><a href="index.html">
+                ABS website
+            </a>
+        </h1>
+        <nav id="mainNav">
+
+            <ul>
+                <!--Mettez le nom de votre site dans les points ci dessous-->
+                <li><a href="index.html" title="Vers la page d'accueil du site ABS website">Accueil</a></li>
+                <li><a href="galleries.html" title="Vers les galeries livres de ce site">Galeries livres</a></li>
+                <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                <li><a href="about.html" title="En savoir plus sur ce site et sur son propriétaire">À propos</a></li>
+                <!--ici vous pouvez ajouter d'autre activité-->
+
+            </ul>
+        </nav>
+        <button class="menuToggle">
+            <img src="images/Book.png" alt="Ouvrir / Fermer le menu" width="20" height="20" />
+        </button>
+    </header>
+    <!--Ici se termine le #mainHeader-->
+    <main id="pageContent11" class="oneCol home">
+        <H1>WELCOME TO MY WEBSITE</H1>
+
+    </main>
+    <!--Ici se termine le #pageContent-->
+    <footer id="mainFooter">
+        <nav id="nav_foot">
+            <ul>
+                <!--Mettez le nom de votre site dans les points ci dessous-->
+                <li><a href="index.html" title="Vers la page d'accueil du site ABS website">Accueil</a></li>
+                <li><a href="galleries.html" title="Vers les galeries livres de ce site">Galeries livres</a></li>
+                <li><a href="contact.html" title="Vers la page de contact de ce site">Contact</a></li>
+                <li><a href="about.html" title="En savoir plus sur ce site et sur son propriétaire">À propos</a></li>
+                <!--ici vous pouvez ajouter d'autre activité-->
+
+            </ul>
+        </nav>
+        <p>&copy; All rights reserved for <a class="linkedin"
+                href="https://www.linkedin.com/in/ahmed-ben-salem-734735228/" target="_blank">Ahmed Ben Salem</a></p>
+
+    </footer>
+    <!--Ici se termine le #mainFooter-->
+    <script type="text/javascript">
+        $(".menuToggle").click(function () {
+            $("#mainNav").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>
